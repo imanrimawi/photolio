@@ -12,41 +12,61 @@
     
     <title>Photolio</title>
     <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/thumbs/camera-icon/camera-icon-21.png">
+   
+   
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
  <style>
-* {box-sizing: border-box}
+  .CoreMemories {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-body, html {
-  height: 100%;
-  margin: 0;
-}
+  .USA {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
+  .Jordan {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-}
 
 #Home {background-color: rgb(223, 208, 208);}
 #USA {background-color:  rgb(223, 208, 208);}
@@ -104,7 +124,7 @@ body, html {
   elmnt.style.backgroundColor = color;
 }
 
-// Get the element with id="defaultOpen" and click on it
+
 document.getElementById("defaultOpen").click();
 
 </script>
@@ -125,8 +145,8 @@ document.getElementById("defaultOpen").click();
  
  <div id="Home" class="tabcontent">
    <h3>Home</h3>
-<!--original javascript code below-->
 
+  
 <h4 id="heading" style="background-color:rgb(162, 94, 94)">you answer:</h1>
 <p>Hello user, this photolio has a total of three exebitions. USA, Jordan, and Core Memories. Which one are you most exited/interested to see?: </p><input id="textbox" type="text"><button onclick="hello();">submit</button>
 
@@ -155,26 +175,6 @@ document.getElementById("defaultOpen").click();
   <h3>USA</h3>
   <h5>PS. tap on the photos to learn more</h5>
 
-
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  </style>
-      
   <div class="row">
     <div class="column">
     <a href="sunset.html"><img src="sunset.png" style="width:100%">
@@ -193,27 +193,6 @@ document.getElementById("defaultOpen").click();
   <h3>Jordan</h3>
   <h5>PS. tap on the photos to learn more</h5>
 
- 
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  </style>
- 
-      
   <div class="row">
     <div class="column">
       <a href="aqaba.html"><img src="aqaba.png" style="width:100%">
@@ -232,26 +211,6 @@ document.getElementById("defaultOpen").click();
   <h3>Core Memories</h3>
   <h5>PS. tap on the photos to learn more</h5>
 
-  
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  </style>
-      
   <div class="row">
     <div class="column">
       <a href="fresno.html"><img src="fresno.png" style="width:100%">
